@@ -3,7 +3,7 @@
  * @ormat
  */
 
- @font-face {
+@font-face {
   font-family: "FbScorpion";
   src: url("./fonst/FbScorpion-Light.otf");
   font-weight: normal;
@@ -11,7 +11,7 @@
 }
 
 body {
-  font-family: "FbScorpion"!important;
+  font-family: "FbScorpion" !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white !important;
@@ -898,7 +898,7 @@ body {
 
 .f9 {
   font-size: 9px;
-  margin-top: 2px!important;
+  margin-top: 2px !important;
   padding: 0px 1px;
 }
 
@@ -1303,7 +1303,7 @@ body {
   }
   .f12 {
     font-size: 9px;
-    margin-top: 4px!important;
+    margin-top: 4px !important;
   }
   .f11 {
     font-size: 11px;
@@ -1506,15 +1506,19 @@ ALIBA
   color: white !important;
   border-radius: 12px !important;
   font-size: 1.5em;
-  padding: 0.5em;
   font-weight: 100 !important;
+  width: 100%;
   margin-top: 9px;
+}
+#pulse {
+  margin: 0px;
+  padding: 0px;
 }
 .form-control {
   border-radius: 8px !important;
   padding-top: 10px !important;
   padding-bottom: 10px !important;
-  font-size: 0.8em!important;
+  font-size: 0.8em !important;
   font-weight: 600;
   margin-top: 9px;
 }
@@ -1524,11 +1528,16 @@ ALIBA
   margin-top: 24px;
 }
 
+.thanks {
+  width: 70% !important;
+}
+
 .content_footer {
   position: absolute;
-  background: #00000000;
+  background-image: linear-gradient(transparent, black);
   bottom: 0;
-  padding: 20px 40px 23px 80px;
+  padding: 80px 40px 23px 80px;
+  z-index: 1;
 }
 
 .f12.text-rigth {
@@ -1551,7 +1560,6 @@ ALIBA
   text-align: right;
 }
 
-
 .text-center.text-thanks {
   margin-bottom: 88px;
   line-height: 1;
@@ -1564,116 +1572,132 @@ ALIBA
   margin-top: 45px;
 }
 
-.only-mobile{
+.only-mobile {
   display: none;
 }
 @media screen and (max-width: 560px) {
-
   .mobile-colom {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .a {
-      width: 100%;
-      overflow-y: scroll;
+    width: 100%;
+    overflow-y: scroll;
   }
 
-  .b{
+  .b {
     display: none;
   }
 
-  .only-mobile{
+  .only-mobile {
     display: block;
   }
 
   .only-mobile img {
-      height: inherit!important;
+    height: inherit !important;
   }
 
   .ab {
-      padding: 18px!important;
+    padding: 18px !important;
   }
 
   .mobile-padding {
-      padding: 0px 36px;
+    padding: 0px 36px;
   }
 
   .only-mobile .text.text-center {
-      padding: 0px 26px;
-      line-height: 1.2;
+    padding: 0px 26px;
+    line-height: 1.2;
   }
 
   .logo2 {
-      width: 24%;
-      margin-top: 21px;
-      margin-bottom: 25px;
+    width: 24%;
+    margin-top: 21px;
+    margin-bottom: 25px;
   }
 
   input.form-control {
-    font-size: 17px!important;
+    font-size: 17px !important;
+  }
+
+  input.form-control {
+    font-size: 17px !important;
+    border-radius: 5px !important;
+  }
+
+  button.btn.btn_submit {
+    font-size: 26px;
+    border-radius: 5px !important;
+  }
+
+  .d1,
+  .d2 {
+    width: 46%;
+  }
+
+  .only-mobile.b-white {
+    width: 100%;
+  }
+
+  .only-mobile.b-white img.logo {
+    width: 50%;
+    padding: 10px 20px;
+  }
+
+  .only-mobile.fix-pop {
+    position: fixed;
+    flex-direction: row !important;
+    bottom: 0;
+    background: #241125 !important;
+    width: 95%;
+    display: flex;
+    padding: 13px 0px;
+  }
+
+  .cls-1 {
+    fill: #ffffff !important;
+  }
+
+  .only-mobile svg {
+    width: 26px;
+    margin-right: 11px;
+  }
+
+  .line {
+    background: #fff;
+    width: 0.4px;
+    height: 32px;
+    margin-top: 8px;
+    margin-right: 14px;
+    margin-left: 10px;
+  }
+
+  .l1 {
+    line-height: 3;
+    margin-right: 7px;
+  }
+
+  .f20.l2 {
+    line-height: 2.4;
+    margin-right: 7px;
+  }
 }
 
-input.form-control {
-  font-size: 17px!important;
-   border-radius: 5px!important;
+.pulse {
+  animation: heart-pulse 0.9s infinite ease-out !important;
 }
 
-button.btn.btn_submit {
-  font-size: 26px;
-  border-radius: 5px!important;
-}
-
-
-.d1, .d2 {
-  width: 46%;
-}
-
-.only-mobile.b-white {
-  width: 100%;
-}
-
-.only-mobile.b-white img.logo {
-  width: 50%;
-  padding: 10px 20px;
-}
-
-.only-mobile.fix-pop {
-  position: fixed;
-  flex-direction: row!important;
-  bottom: 0;
-  background: #241125 !important;
-  width: 95%;
-  display: flex;
-  padding: 13px 0px;
-}
-
-.cls-1 {
-  fill: #ffffff!important;
-}
-
-.only-mobile svg {
-  width: 26px;
-  margin-right: 11px;
-}
-
-.line {
-  background: #fff;
-  width: 0.4px;
-  height: 32px;
-  margin-top: 8px;
-  margin-right: 14px;
-  margin-left: 10px;
-}
-
-.l1 {
-  line-height: 3;
-  margin-right: 7px;
-}
-
-.f20.l2 {
-  line-height: 2.4;
-  margin-right: 7px;
-}
-
-
+@keyframes heart-pulse {
+  0% {
+    transform: scale(0) !important;
+  }
+  50% {
+    transform: scale(1.2) !important;
+  }
+  70% {
+    transform: scale(0.65) !important;
+  }
+  100% {
+    transform: scale(0) !important;
+  }
 }

@@ -20,8 +20,20 @@
   });
 })();
 
-
 jQuery(document).ready(function ($) {
+  $(".carousel").carousel({
+    interval: 3000,
+  });
+  $("#pulse").mouseover(function () {
+    console.log("kjf");
+    $(this).addClass("animate__animated animate__pulse animate__delay-0.1s");
+  });
 
+  $("#pulse").mouseleave(function () {
+    setTimeout(() => {
+      $(this).removeClass()(
+        "animate__animated animate__pulse animate__delay-0.1s"
+      );
+    }, 50);
+  });
 });
-
